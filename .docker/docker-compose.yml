@@ -1,0 +1,9 @@
+services:
+  auth_client:
+    image: base-auth-client:0.0.1
+    build:
+      dockerfile: .docker/Dockerfile
+      context: ../
+    container_name: auth-client
+    ports:
+      - "8090:8090"
